@@ -64,6 +64,16 @@ namespace Lecture_9
                 Console.WriteLine("The number is odd");
             }
 
+            int[] arr = { 23, 54, 1, 775, 45, 64 };
+            /* Array of Integers
+             * 0 23
+             * 1 54
+             * 2 1 
+             * 3 775
+             * 4 45
+             * 5 64
+             */
+
         }
     }
 }
