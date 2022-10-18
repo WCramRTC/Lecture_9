@@ -46,25 +46,25 @@ namespace Lecture_9
             //Console.WriteLine(total);
 
             // How to check if a number is an even
-            int number = 11;
+            //int number = 11;
 
-            bool isEven = number % 2 == 0;
+            //bool isEven = number % 2 == 0;
 
             //bool isOdd = number % 2 != 0;
 
             //bool isOddALso = number % 2 == 1;
             //bool isEvenToo = number % 2 != 1;
 
-            if (isEven)
-            {
-                Console.WriteLine("The number is even");
-            }
-            else
-            {
-                Console.WriteLine("The number is odd");
-            }
+            //if (isEven)
+            //{
+            //    Console.WriteLine("The number is even");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("The number is odd");
+            //}
 
-            int[] arr = { 23, 54, 1, 775, 45, 64 };
+            //int[] arr = { 23, 54, 1, 775, 45, 64 };
             /* Array of Integers
              * 0 23
              * 1 54
@@ -73,6 +73,35 @@ namespace Lecture_9
              * 4 45
              * 5 64
              */
+
+            try
+            {
+                Random rand = new Random();
+                int num1 = rand.Next(1, 100);
+                int num2 = rand.Next(1, 100);
+
+                Console.WriteLine($"What is {num1} plus {num2}");
+
+                int equation = num1 + num2;
+
+                Console.WriteLine("Enter your answer: ");
+                string userInput = Console.ReadLine();
+                int userAnswer = int.Parse(userInput);
+
+                if(userAnswer == equation)
+                {
+                    Console.WriteLine("That answer was correct.");
+                }
+                else
+                {
+                    Console.WriteLine("That was the wrong answer");
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Enter a valid number.");
+            }
+
 
         }
     }
